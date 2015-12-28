@@ -1,0 +1,70 @@
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+
+         >
+
+        <!-- Capture picture button -->
+        <Button
+            android:id="@+id/btnCapturePicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take a Picture"
+
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="62dp"
+            />
+
+        <!-- Record video button -->
+        <Button
+            android:id="@+id/btnRecordVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Image"
+            android:layout_marginLeft="10dp"
+      android:layout_toRightOf="@+id/btnCapturePicture"
+          android:layout_alignBaseline="@+id/btnCapturePicture"
+           />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/btnRecordVideo"
+            android:layout_alignBaseline="@+id/btnCapturePicture"
+            />
+
+
+
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Preview"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:id="@+id/textView"
+
+
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/btnCapturePicture" />
+
+        <!-- To display picture taken -->
+        <ImageView
+            android:id="@+id/imgPreview"
+            android:layout_width="fill_parent"
+
+            android:layout_height="300dp"
+            android:layout_below="@+id/textView"
+           />
+
+        <!-- To preview video recorded -->
+
+    </RelativeLayout>
+

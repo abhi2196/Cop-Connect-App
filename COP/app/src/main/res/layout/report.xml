@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="Update FIR"
+        android:background="@android:color/holo_green_dark">
+    </android.support.v7.widget.Toolbar>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Report title"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:hint="Report Description"
+        android:id="@+id/editText2"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/editText" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fake FIR Case ?"
+        android:id="@+id/checkBox"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/editText2"
+        android:layout_alignStart="@+id/editText2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Update Report"
+        android:id="@+id/button"
+        android:background="@android:color/holo_green_light"
+        android:padding="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/checkBox"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:layout_above="@+id/editText2"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2"
+        android:hint="Location" />
+</RelativeLayout>

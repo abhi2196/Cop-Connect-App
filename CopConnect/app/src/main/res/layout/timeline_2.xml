@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#C8BFE7"
+    android:layout_marginTop="47dp"
+    android:layout_height="match_parent"
+    android:id="@+id/jyoti">
+
+
+
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtLabel"
+        android:src="@drawable/icon"
+        android:id="@+id/imf"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Case Registered"
+        android:id="@+id/title"
+        android:layout_alignTop="@+id/imf"
+        android:layout_toRightOf="@+id/imf"
+        android:layout_toEndOf="@+id/imf" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="descp"
+        android:id="@+id/descp1"
+        android:layout_below="@+id/title"
+
+        android:layout_alignLeft="@+id/title"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="time1"
+        android:textColor="#ff0023"
+        android:id="@+id/time1"
+        android:layout_below="@+id/descp1"
+
+        android:layout_alignLeft="@+id/descp1"
+        />
+
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/calendar"
+        android:id="@+id/second"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Case Verified"
+        android:id="@+id/title2"
+        android:layout_alignBottom="@+id/imf"
+        android:layout_toLeftOf="@+id/imf"
+        android:layout_toStartOf="@+id/imf" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="descp2"
+        android:id="@+id/descp2"
+        android:layout_below="@+id/title2"
+
+        android:layout_alignLeft="@+id/title2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="time2"
+        android:textColor="#ff0023"
+        android:id="@+id/time2"
+        android:layout_below="@+id/descp2"
+
+        android:layout_alignLeft="@+id/descp2"
+        />
+
+
+
+</RelativeLayout>

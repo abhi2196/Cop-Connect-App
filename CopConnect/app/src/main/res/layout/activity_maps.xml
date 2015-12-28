@@ -1,0 +1,53 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    >
+    <EditText
+        android:layout_width="271dp"
+        android:layout_height="57dp"
+        android:id="@+id/ed_addr"
+        android:hint="Enter Location"
+        android:drawableLeft="@android:drawable/ic_search_category_default"
+        android:gravity="center" />
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="88dp"
+        android:layout_height="match_parent"
+        android:text="Search"
+        android:id="@+id/bsid"
+        android:clickable="true"
+        android:onClick="onSearch"
+        android:enabled="true" />
+    </LinearLayout>
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="367dp"
+    android:layout_height="match_parent"
+    />
+
+
+
+</LinearLayout>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+
+        android:id="@+id/button2"
+        android:layout_gravity="right|bottom" />
+</FrameLayout>
